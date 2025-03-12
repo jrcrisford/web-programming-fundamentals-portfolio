@@ -1,0 +1,187 @@
+/*
+- The background color is #dddddd
+- All content should be centered
+- The top margin is 25px and the left and right are automatic
+*/
+body {
+    display: flex;
+
+
+}
+
+/*
+A 'wrapper' for all content
+
+- The background color is white
+- The font used for all container content should be Arial with fallback
+    to Helvetica and then whatever sans-serif font is available
+- The font should be 15px
+- The border radius on all corners is 10px
+- The bottom padding is 10px;
+- The max width is 800px
+*/
+#container {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/*
+Our pages only have a single header element, which will house the banner image and page title
+*/
+header {
+    position: relative;
+}
+
+/*
+Define a CSS rule for the banner image (a child of the header element)
+
+- To ensure the image is sized appropriately, its width should be 100%
+- The border radius on the top-left and top-right corner is 10px
+*/
+
+
+
+/*
+A rule for the heading element within the header.
+
+- The heading should be positioned 'absolute' so that it can appear on top
+    of the background image.
+- The font size of the heading is 40px
+- The colour is white
+- The heading text should appear in all uppercase
+- The heading text should appear 15px above the bottom of the image
+    (hint: margin or padding)
+- The position of the heading within the header element is 10px from the left and
+    0px from the bottom
+*/
+header h1 {
+
+
+}
+
+/* 
+A rule for the list of navigation links.
+
+- The list's style type should be none (so that it does not display dots next to each item)
+- The list should be displayed as a flex container
+- It should have a gap between items of 10px
+- Its margin should be 0 all around
+- It should have a padding of 1em on the left
+*/
+nav ul {
+
+
+}
+
+/*
+Define multiple CSS rules for the main content of the page
+
+The following guidelines apply:
+- The margin/padding around the main content is 20px top and bottom and 15px left and right
+- The subheadings (h2) 'Event Information', 'Pricing', and 'Course Desc.' have top margins
+    of 30px and bottom margins of 5px. Their font size is 16px with text appearing in
+    bold uppercase (a text transform will be needed). The colour is #246fb4.
+- But the subheading (h2) that is the first child of the main element should have no top margin
+- Paragraphs and unordered lists (within the main section) should have a bottom margin of 10px.
+- The footer text size is 11px in the colour #556677. The text is centered.
+*/
+
+
+
+/*
+A rule for tables appearing in the main section of the page.
+(You will need add additional rules for table headings and data cells.)
+
+Requirements:
+- The table's borders should be collapsed
+- Like paragraphs and lists it should have a 10px bottom margin (0 on other sides)
+- Its border should be 1px, solid and colour #dddddd
+- All table cells (both headers and data cells) should left align text,
+  have a border the same as the table, and use 5px padding all around
+*/
+main table {
+
+
+}
+
+/* TODO Add rules for the table headers and cells as needed to emulate the screenshots in the task (then delete this comment) */
+
+
+
+/*
+A class to define the look of a button. This can be applied to button elements
+as well as hyperlinks.
+
+- Buttons should have no border
+- The margin around the button should be 5px top and bottom and 0px left and right
+- The padding of the button text is 10px top and bottom and 15px left and right
+- The button text is white, uppercase, 12px, and coloured white
+- There should be no other decoration visible on the button text (e.g., no underline)
+- The mouse cursor should be the system default (so .btn hyperlinks will not use the hand pointer)
+
+The 'Register' buttons should have:
+- A default background colour of #246fb4
+- A mouse over background colour of #448fd4
+
+The 'Cancel / Back' button should have:
+- A default background colour of #7c7c7c
+- A mouse over background colour of #929292
+
+You will need to define additional CSS rules to style the button colours
+*/
+.btn {
+
+
+}
+
+
+/* Registration Form Grid Layout */
+
+/*
+The registration form (but not any other forms that may appear on the website)
+should be displayed using a grid layout.
+(We assume the form has an id written in camelCase to help us to retrieve it
+using JavaScript in Week 5.)
+
+- Provide template columns that use auto sizing for the first column and 200px for the second column
+- The gap between elements is 10px
+- Justify the content to the left
+*/
+#registrationForm {
+
+
+}
+
+/*
+A class for a form element label
+
+- The font should be bold
+*/
+.form-label {
+ 
+
+}
+
+/*
+A class for a form input element (includes <input> and <select>)
+
+- The font size of the input is 15px (to match the page body)
+*/
+.form-control {
+
+
+}
+
+/*
+A class for elements that should span both columns, such as the prior experience
+label (which should wrap around the checkbox input) and the container for the
+form actions (the submit and cancel buttons)
+
+- It should span two columns (achievable by setting the grid column end to span 2)
+*/
+.col-span {
+
+
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="joshua crisford">
+        <title>Marathon 2025 Registration</title>
+    </head>
+    <body>
+        <div id="container">
+            
+            <!-- Header -->
+            <header>
+                <img src="images/banner.png" alt="Banner Image">
+                <h1>Marathon 2025</h1>
+            </header>
+
+            <!-- Navigation Section -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+
+            <!-- Main Section -->
+            <main>
+                <h2>Registration</h2>
+
+                <!-- Registration Form -->
+                <form action="#" method="post">
+                    <!-- First Name-->
+                    <p>
+                        <label for="firstName">First name</label><br>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </p>
+
+                    <!-- Last Name -->
+                    <p>
+                        <label for="lastName">Last name</label><br>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </p>
+
+                    <!-- Event Select-->
+                    <p>
+                        <label for="event">Select an event</label><br>
+                        <select id="event" name="event" required>
+                            <option value="">-- Select Event --</option>
+                            <option value="marathon">Marathon</option>
+                            <option value="half_marathon">Half Marathon</option>
+                            <option value="10_km">10 km</option>
+                            <option value="5_km">5 km</option>
+                            <option value="1_km_fun_run">1 km fun run</option>
+                        </select>
+                    </p>
+
+                    <!-- Age Group Select -->
+                    <p>
+                        <label for="ageGroup">Age Group</label><br>
+                        <select id="ageGroup" name="ageGroup" required>
+                            <option value="">-- Select Age Range --</option>
+                            <option value="Under_21">Under 21</option>
+                            <option value="21-39">21-39</option>
+                            <option value="40-49">40-49</option>
+                            <option value="50_plus">50+</option>
+                        </select>
+                    </p>
+
+                    <!-- Prior Experience Select -->
+                    <label>
+                        <input type="checkbox" id="priorExperience" name="priorExperience">
+                        Prior Experience?
+                    </label>
+
+                    <!-- Email Entry -->
+                    <p>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <!-- Password Entry -->
+                    <p>
+                        <label for="password">Password</label><br>
+                        <input type="password" 
+                               id="password" 
+                               name="password" 
+                               required
+                               minlength="6" 
+                               maxlength="18">
+                    </p>
+
+                    <!-- Password Confirmation -->
+                    <p>
+                        <label for="confirmPassword">Confirm password</label><br>
+                        <input type="password" 
+                               id="confirmPassword" 
+                               name="confirmPassword" 
+                               required
+                               minlength="6" 
+                               maxlength="18">
+                    </p>
+
+                    <!-- Register Button -->
+                    <p>
+                        <button type="submit">Register</button>
+                        <a href="index.html">Cancel</a>
+                    </p>
+                </form>
+            </main>
+
+            <br>
+            <br>
+
+            <!-- Footer Section -->
+            <footer>
+                KIT202 Portfolio | Marathon 2025
+            </footer>
+        </div>
+    </body>
+</html>
