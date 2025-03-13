@@ -5,8 +5,9 @@
 */
 body {
     display: flex;
-
-
+    background-color: #dddddd;
+    margin: 25px auto;
+    justify-content: center;
 }
 
 /*
@@ -23,8 +24,12 @@ A 'wrapper' for all content
 #container {
     display: flex;
     flex-direction: column;
-
-
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    max-width: 800px;
 }
 
 /*
@@ -41,7 +46,10 @@ Define a CSS rule for the banner image (a child of the header element)
 - The border radius on the top-left and top-right corner is 10px
 */
 
-
+header img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
 
 /*
 A rule for the heading element within the header.
@@ -57,8 +65,13 @@ A rule for the heading element within the header.
     0px from the bottom
 */
 header h1 {
-
-
+    position: absolute;
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    left: 10px;
+    bottom: 15px;
 }
 
 /* 
@@ -71,8 +84,11 @@ A rule for the list of navigation links.
 - It should have a padding of 1em on the left
 */
 nav ul {
-
-
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding-left: 1em;
 }
 
 /*
@@ -87,8 +103,33 @@ The following guidelines apply:
 - Paragraphs and unordered lists (within the main section) should have a bottom margin of 10px.
 - The footer text size is 11px in the colour #556677. The text is centered.
 */
+main {
+    margin: 20px 15px;
+}
 
+main h2 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #246fb4;
+}
 
+main > h2:first-of-type {
+    margin-top: 0;
+}
+
+main p,
+main ul {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 11px;
+    color: #556677;
+}
 
 /*
 A rule for tables appearing in the main section of the page.

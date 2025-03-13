@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="joshua crisford">
+        <link rel="stylesheet" href="styles/style.css">
         <title>Marathon 2025 Registration</title>
     </head>
     <body>
@@ -30,41 +31,33 @@
                 <!-- Registration Form -->
                 <form action="#" method="post">
                     <!-- First Name-->
-                    <p>
-                        <label for="firstName">First name</label><br>
-                        <input type="text" id="firstName" name="firstName" required>
-                    </p>
+                    <label for="firstName">First name</label><br>
+                    <input type="text" id="firstName" name="firstName" required>
 
                     <!-- Last Name -->
-                    <p>
-                        <label for="lastName">Last name</label><br>
-                        <input type="text" id="lastName" name="lastName" required>
-                    </p>
+                    <label for="lastName">Last name</label><br>
+                    <input type="text" id="lastName" name="lastName" required>
 
                     <!-- Event Select-->
-                    <p>
-                        <label for="event">Select an event</label><br>
-                        <select id="event" name="event" required>
-                            <option value="">-- Select Event --</option>
-                            <option value="marathon">Marathon</option>
-                            <option value="half_marathon">Half Marathon</option>
-                            <option value="10_km">10 km</option>
-                            <option value="5_km">5 km</option>
-                            <option value="1_km_fun_run">1 km fun run</option>
-                        </select>
-                    </p>
+                    <label for="event">Select an event</label><br>
+                    <select id="event" name="event" required>
+                        <option value="">-- Select Event --</option>
+                        <option value="marathon">Marathon</option>
+                        <option value="half_marathon">Half Marathon</option>
+                        <option value="10_km">10 km</option>
+                        <option value="5_km">5 km</option>
+                        <option value="1_km_fun_run">1 km fun run</option>
+                    </select>
 
                     <!-- Age Group Select -->
-                    <p>
-                        <label for="ageGroup">Age Group</label><br>
-                        <select id="ageGroup" name="ageGroup" required>
-                            <option value="">-- Select Age Range --</option>
-                            <option value="Under_21">Under 21</option>
-                            <option value="21-39">21-39</option>
-                            <option value="40-49">40-49</option>
-                            <option value="50_plus">50+</option>
-                        </select>
-                    </p>
+                    <label for="ageGroup">Age Group</label><br>
+                    <select id="ageGroup" name="ageGroup" required>
+                        <option value="">-- Select Age Range --</option>
+                        <option value="Under_21">Under 21</option>
+                        <option value="21-39">21-39</option>
+                        <option value="40-49">40-49</option>
+                        <option value="50_plus">50+</option>
+                    </select>
 
                     <!-- Prior Experience Select -->
                     <label>
@@ -73,38 +66,30 @@
                     </label>
 
                     <!-- Email Entry -->
-                    <p>
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email" required>
-                    </p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required>
 
                     <!-- Password Entry -->
-                    <p>
-                        <label for="password">Password</label><br>
-                        <input type="password" 
-                               id="password" 
-                               name="password" 
-                               required
-                               minlength="6" 
-                               maxlength="18">
-                    </p>
+                    <label for="password">Password</label><br>
+                    <input type="password" 
+                           id="password" 
+                           name="password" 
+                           required
+                           minlength="6" 
+                           maxlength="18">
 
                     <!-- Password Confirmation -->
-                    <p>
-                        <label for="confirmPassword">Confirm password</label><br>
-                        <input type="password" 
-                               id="confirmPassword" 
-                               name="confirmPassword" 
-                               required
-                               minlength="6" 
-                               maxlength="18">
-                    </p>
+                    <label for="confirmPassword">Confirm password</label><br>
+                    <input type="password" 
+                           id="confirmPassword" 
+                           name="confirmPassword" 
+                           required
+                           minlength="6" 
+                           maxlength="18">
 
                     <!-- Register Button -->
-                    <p>
-                        <button type="submit">Register</button>
-                        <a href="index.html">Cancel</a>
-                    </p>
+                    <button type="submit">Register</button>
+                    <a href="index.html">Cancel</a>
                 </form>
             </main>
 
