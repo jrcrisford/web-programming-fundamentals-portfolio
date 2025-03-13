@@ -126,9 +126,9 @@ main ul {
 }
 
 footer {
-    text-align: center;
     font-size: 11px;
     color: #556677;
+    text-align: center;
 }
 
 /*
@@ -143,13 +143,17 @@ Requirements:
   have a border the same as the table, and use 5px padding all around
 */
 main table {
-
-
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd
 }
 
-/* TODO Add rules for the table headers and cells as needed to emulate the screenshots in the task (then delete this comment) */
-
-
+main table th,
+main table td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+    text-align: left;
+}
 
 /*
 A class to define the look of a button. This can be applied to button elements
@@ -173,8 +177,30 @@ The 'Cancel / Back' button should have:
 You will need to define additional CSS rules to style the button colours
 */
 .btn {
+    border: none;
+    margin: 5px 0;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: default;
+}
 
+.btn-register {
+    background-color: #246fb4;
+}
 
+.btn-register:hover {
+    background-color: #448fd4;
+}
+
+.btn-cancel {
+    background-color: #7c7c7c;
+}
+
+.btn-cancel:hover {
+    background-color: #929292;
 }
 
 
