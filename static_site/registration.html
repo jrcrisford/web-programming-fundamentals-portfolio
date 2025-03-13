@@ -29,18 +29,19 @@
                 <h2>Registration</h2>
 
                 <!-- Registration Form -->
-                <form action="#" method="post">
+                <form id="registrationForm" class="form-control" action="#" method="post">
+
                     <!-- First Name-->
-                    <label for="firstName">First name</label><br>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <label for="firstName" class="form-label"> First name</label>
+                    <input type="text" id="firstName" name="firstName" class="form-control" required>
 
                     <!-- Last Name -->
-                    <label for="lastName">Last name</label><br>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" id="lastName" name="lastName" class="form-control" required>
 
                     <!-- Event Select-->
-                    <label for="event">Select an event</label><br>
-                    <select id="event" name="event" required>
+                    <label for="event" class="form-label">Select an event</label>
+                    <select id="event" name="event" class="form-control" required>
                         <option value="">-- Select Event --</option>
                         <option value="marathon">Marathon</option>
                         <option value="half_marathon">Half Marathon</option>
@@ -50,8 +51,8 @@
                     </select>
 
                     <!-- Age Group Select -->
-                    <label for="ageGroup">Age Group</label><br>
-                    <select id="ageGroup" name="ageGroup" required>
+                    <label for="ageGroup" class="form-label">Age Group</label>
+                    <select id="ageGroup" name="ageGroup" class="form-control" required>
                         <option value="">-- Select Age Range --</option>
                         <option value="Under_21">Under 21</option>
                         <option value="21-39">21-39</option>
@@ -60,41 +61,42 @@
                     </select>
 
                     <!-- Prior Experience Select -->
-                    <label>
-                        <input type="checkbox" id="priorExperience" name="priorExperience">
+                    <label class="form-label col-span">
+                        <input type="checkbox" id="priorExperience" name="priorExperience" class="form-control">
                         Prior Experience?
                     </label>
 
                     <!-- Email Entry -->
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
 
                     <!-- Password Entry -->
-                    <label for="password">Password</label><br>
+                    <label for="password" class="form-label">Password</label>
                     <input type="password" 
                            id="password" 
                            name="password" 
                            required
                            minlength="6" 
-                           maxlength="18">
+                           maxlength="18"
+                           class="form-control">
 
                     <!-- Password Confirmation -->
-                    <label for="confirmPassword">Confirm password</label><br>
+                    <label for="confirmPassword" class="form-label">Confirm password</label>
                     <input type="password" 
                            id="confirmPassword" 
                            name="confirmPassword" 
                            required
                            minlength="6" 
-                           maxlength="18">
+                           maxlength="18"
+                           class="form-control">
 
                     <!-- Register Button -->
-                    <button type="submit" class="btn btn-register">Register</button>
-                    <a href="index.html" class="btn btn-cancel">Cancel/Back</a>
+                    <div class="col-span">
+                        <button type="submit" class="btn btn-register">Register</button>
+                        <a href="index.html" class="btn btn-cancel">Cancel/Back</a>
+                    </div>
                 </form>
             </main>
-
-            <br>
-            <br>
 
             <!-- Footer Section -->
             <footer>

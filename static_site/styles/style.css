@@ -217,8 +217,10 @@ using JavaScript in Week 5.)
 - Justify the content to the left
 */
 #registrationForm {
-
-
+    display: grid;
+    grid-template-columns: auto 200px;
+    gap: 10px;
+    justify-content: start;
 }
 
 /*
@@ -227,8 +229,7 @@ A class for a form element label
 - The font should be bold
 */
 .form-label {
- 
-
+    font-weight: bold;
 }
 
 /*
@@ -237,8 +238,7 @@ A class for a form input element (includes <input> and <select>)
 - The font size of the input is 15px (to match the page body)
 */
 .form-control {
-
-
+    font-size: 15px;
 }
 
 /*
@@ -249,6 +249,5 @@ form actions (the submit and cancel buttons)
 - It should span two columns (achievable by setting the grid column end to span 2)
 */
 .col-span {
-
-
+    grid-column: 1 / span 2;
 }
