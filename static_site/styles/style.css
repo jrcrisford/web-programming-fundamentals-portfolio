@@ -251,3 +251,28 @@ form actions (the submit and cancel buttons)
 .col-span {
     grid-column: 1 / span 2;
 }
+
+@media (max-width: 800px) {
+    body {
+        margin: auto;
+        background-color: white;
+    }
+
+    #container,
+    header img {
+        border-radius: 0;
+    }
+    
+    header h1 {
+        font-size: 36px;
+    }
+
+    #registrationForm {
+        grid-template-columns: 100%;
+        gap: 5px;
+    }
+
+    .col-span {
+        grid-column-end: inherit;
+    }
+}
