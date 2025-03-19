@@ -252,6 +252,30 @@ form actions (the submit and cancel buttons)
     grid-column: 1 / span 2;
 }
 
+#testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: baseline;
+}
+
+#testimonials aside {
+    display: flex;
+    max-width: 10em;
+    row-gap: 5px;
+    flex-direction: column;
+
+    color: white;
+    background-color: steelblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#testimonials aside .author {
+    text-align: right;
+    font-style: italic;
+}
+
 @media (max-width: 800px) {
     body {
         margin: auto;
