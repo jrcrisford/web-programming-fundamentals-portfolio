@@ -2,7 +2,6 @@
 
 console.log("playground.js is running");
 
-
 /* Activity 2: Football Trophy */
 
 // Activity 2, Rule 1
@@ -67,8 +66,8 @@ function determineRule2Winner() {
     document.getElementById("activity2-most-wins").innerHTML = result;
 }
 
-//TODO Call the top-level functions determineRule1Winner and determinRule2Winner when they're ready
-
+determineRule1Winner();
+determineRule2Winner();  
 
 /* Activity 3: Tax */
 let clients = { 
@@ -107,17 +106,42 @@ function processClientList() {
     document.getElementById("activity3-taxes").innerHTML = output;
 }
 
+processClientList();
+
 /* Activity 4: Arbitrary HTML */
+function insertArbitraryHTML() {
+    document.getElementById("activity4-html").innerHTML = `
+    
+        <h3>Lorem Ipsum</h3>
 
-//TODO Write your function for Activity 4 here
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Nullam sed metus sit amet quam fermentum dictum. 
+        <strong>Phasellus</strong> vitae lorem ac quam eleifend fringilla.</p>
 
+        <ul>
+            <li>
+                <strong>Main Features:</strong>
+                <ul>
+                    <li>Curabitur non nulla sit amet nisl tempus convallis.</li>
+                    <li>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</li>
+                    <li>Vestibulum ac diam sit amet quam vehicula elementum.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Highlights:</strong>
+                <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt.</p>
+            </li>
+            <li>
+                <strong>Guidelines:</strong>
+                <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+            </li>
+        </ul>
 
+        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. 
+        Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+    
+    `;
+}
 
 // And call that function here
-
-window.onload = function() {
-    determineRule1Winner();
-    determineRule2Winner();
-    processClientList();
-    // Call the function for Activity 4 here
-}
+insertArbitraryHTML();
