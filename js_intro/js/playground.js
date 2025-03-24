@@ -68,21 +68,44 @@ function determineRule2Winner() {
 }
 
 //TODO Call the top-level functions determineRule1Winner and determinRule2Winner when they're ready
-window.onload = function() {
-    determineRule1Winner();
-    determineRule2Winner();
-};
+
 
 /* Activity 3: Tax */
-
-
-let clients = { //TODO Record client incomes here
-
+let clients = { 
+    Max: 24601,
+    Ash: 55100,
+    Bailey: 147800
 };
 
-//TODO Write your other functions for Activity 3 here
+function calculateTax(income) {
+    let taxRate = 0.0;
 
+    if (income > 130000) {
+        taxRate = 0.27;
+    } else if (income > 90000) {
+        taxRate = 0.21;
+    } else if (income > 45000) {
+        taxRate = 0.15;
+    } else {
+        taxRate = 0.10;
+    }
 
+    return income * taxRate;
+}
+
+function processClientList() {
+    let output = "";
+
+    for (let name in clients) {
+        let income = clients[name];
+        let tax = calculateTax(income);
+        let incomeAfterTax = income - tax;
+        let message = `${name}'s income of $${income.toFixed(2)}, they pay $${tax.toFixed(2)} in tax, so their after tax income is $${incomeAfterTax.toFixed(2)}.`;
+        output += message + "<br>";
+    }
+
+    document.getElementById("activity3-taxes").innerHTML = output;
+}
 
 /* Activity 4: Arbitrary HTML */
 
@@ -92,4 +115,9 @@ let clients = { //TODO Record client incomes here
 
 // And call that function here
 
-
+window.onload = function() {
+    determineRule1Winner();
+    determineRule2Winner();
+    processClientList();
+    // Call the function for Activity 4 here
+}
