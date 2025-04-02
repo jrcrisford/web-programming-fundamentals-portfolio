@@ -5,7 +5,7 @@
         <meta name="author" content="joshua crisford">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/style.css">
-        <script src="../js/validation.js" defer></script>
+        <script src="js/validation.js" defer></script>
         <title>Marathon 2025 Registration</title>
     </head>
     <body>
@@ -37,10 +37,12 @@
                     <!-- First Name-->
                     <label for="firstName" class="form-label"> First name</label>
                     <input type="text" id="firstName" name="firstName" class="form-control" required>
+                    <span class="error-message" id="firstName-error"></span>
 
                     <!-- Last Name -->
                     <label for="lastName" class="form-label">Last name</label>
                     <input type="text" id="lastName" name="lastName" class="form-control" required>
+                    <span class="error-message" id="lastName-error"></span>
 
                     <!-- Event Select-->
                     <label for="event" class="form-label">Select an event</label>
@@ -52,6 +54,7 @@
                         <option value="5_km">5 km</option>
                         <option value="1_km_fun_run">1 km fun run</option>
                     </select>
+                    <span class="error-message" id="event-error"></span>
 
                     <!-- Age Group Select -->
                     <label for="ageGroup" class="form-label">Age Group</label>
@@ -62,6 +65,7 @@
                         <option value="40-49">40-49</option>
                         <option value="50_plus">50+</option>
                     </select>
+                    <span class="error-message" id="ageGroup-error"></span>
 
                     <!-- Prior Experience Select -->
                     <label class="form-label col-span">
@@ -72,6 +76,7 @@
                     <!-- Email Entry -->
                     <label for="email" class="form-label">Email</label>
                     <input type="email" id="email" name="email" class="form-control" required>
+                    <span class="error-message" id="email-error"></span>
 
                     <!-- Password Entry -->
                     <label for="password" class="form-label">Password</label>
@@ -82,6 +87,7 @@
                            minlength="6" 
                            maxlength="18"
                            class="form-control">
+                    <span class="error-message" id="password-error"></span>
 
                     <!-- Password Confirmation -->
                     <label for="confirmPassword" class="form-label">Confirm password</label>
@@ -92,6 +98,7 @@
                            minlength="6" 
                            maxlength="18"
                            class="form-control">
+                    <span class="error-message" id="confirmPassword-error"></span>
 
                     <!-- Register Button -->
                     <div class="col-span">
