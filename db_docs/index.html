@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example C – ERD & Data Dictionary</title>
+</head>
+<body>
+    <h1>Example C – ERD & Data Dictionary</h1>
+
+    <h2>Entity Relationship Diagram</h2>
+    <p>Click the image or link below to view the full-size ERD:</p>
+    <a href="Tute 8 ERD KIT202.png" target="_blank">
+        <img src="Tute 8 ERD KIT202.png" alt="ERD Diagram" style="width:100%; max-width:800px; border:1px solid #ccc;">
+    </a>
+    <p><a href="Tute 8 ERD KIT202.pdf" download>Download ERD as PDF</a></p>
+
+    <h2>Data Dictionary</h2>
+
+    <h3>Employee</h3>
+    <table border="1" class="dataframe">
+        <thead>
+            <tr style="text-align: right;">
+                <th>Attribute</th>
+                <th>Data Type</th>
+                <th>Description</th>
+                <th>Constraints</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>employeeID</td><td>INT(7)</td><td>Unique ID for the employee</td><td>Primary Key</td><td>1234567</td></tr>
+            <tr><td>firstName</td><td>VARCHAR(50)</td><td>Employee's first name</td><td>Not Null</td><td>Sarah</td></tr>
+            <tr><td>lastName</td><td>VARCHAR(50)</td><td>Employee's last name</td><td>Not Null</td><td>Jones</td></tr>
+            <tr><td>address</td><td>VARCHAR(99)</td><td>Employee's home address</td><td>Nullable</td><td>12 Long St</td></tr>
+            <tr><td>dateOfBirth</td><td>DATE</td><td>Date of birth</td><td>Not Null</td><td>1989-08-12 00:00:00</td></tr>
+            <tr><td>annualSalary</td><td>DECIMAL(10,2)</td><td>Employee's yearly income</td><td>Not Null</td><td>82350</td></tr>
+        </tbody>
+    </table>
+    <br>
+
+    <h3>Race</h3>
+    <table border="1" class="dataframe">
+        <thead>
+            <tr style="text-align: right;">
+                <th>Attribute</th>
+                <th>Data Type</th>
+                <th>Description</th>
+                <th>Constraints</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>raceID</td><td>VARCHAR(6)</td><td>Unique race ID</td><td>Primary Key</td><td>RTB005</td></tr>
+            <tr><td>name</td><td>VARCHAR(99)</td><td>Name of the race</td><td>Not Null</td><td>Run the bridge</td></tr>
+            <tr><td>raceType</td><td>ENUM</td><td>Type of race</td><td>Must be one of: '1K Dash', '5K', '10K', 'Half Marathon', 'Full Marathon'</td><td>Full Marathon</td></tr>
+            <tr><td>location</td><td>VARCHAR(99)</td><td>Location of the race</td><td>Not Null</td><td>Hobart</td></tr>
+            <tr><td>dateTime</td><td>DATETIME</td><td>Start date and time of the race</td><td>Not Null</td><td>9/02/2025  '8:30:00'</td></tr>
+            <tr><td>managedBy</td><td>INT</td><td>Employee ID of the race manager</td><td>FK &gt; Employee.employeeID</td><td>1234567</td></tr>
+        </tbody>
+    </table>
+    <br>
+
+    <h3>Participant</h3>
+    <table border="1" class="dataframe">
+        <thead>
+            <tr style="text-align: right;">
+                <th>Attribute</th>
+                <th>Data Type</th>
+                <th>Description</th>
+                <th>Constraints</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>participantID</td><td>INT(8)</td><td>Unique ID for the participant</td><td>Primary Key</td><td>34567890</td></tr>
+            <tr><td>firstName</td><td>VARCHAR(50)</td><td>Participant's first name</td><td>Not Null</td><td>James</td></tr>
+            <tr><td>lastName</td><td>VARCHAR(50)</td><td>Participant's last name</td><td>Not Null</td><td>Brown</td></tr>
+            <tr><td>dateOfBirth</td><td>DATE</td><td>Date of birth</td><td>Not Null</td><td>2000-06-14 00:00:00</td></tr>
+            <tr><td>gender</td><td>ENUM</td><td>Participant's gender identity</td><td>Must be one of: 'male', 'female', 'undisclosed', 'neither'</td><td>male</td></tr>
+            <tr><td>priorExperience</td><td>BOOLEAN</td><td>Has previously participated in races</td><td>Default false (0 = no, 1 = yes)</td><td>0</td></tr>
+        </tbody>
+    </table>
+    <br>
+
+    <h3>RaceRegistration (Composite)</h3>
+    <table border="1" class="dataframe">
+        <thead>
+            <tr style="text-align: right;">
+                <th>Attribute</th>
+                <th>Data Type</th>
+                <th>Description</th>
+                <th>Constraints</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>participantID</td><td>INT(8)</td><td>Linked participant ID</td><td>FK &gt; Participant.participantID, Part of PK</td><td>34567890</td></tr>
+            <tr><td>raceID</td><td>VARCHAR(6)</td><td>Linked race ID</td><td>FK &gt; Race.raceID, Part of PK</td><td>RTB005</td></tr>
+        </tbody>
+    </table>
+    <br>
+
+    <p><a href="Tute 8 Data Dictionary.pdf" download>Download Data Dictionary as PDF</a></p>
+</body>
+
+<footer>
+    <hr>
+    <p>&copy; 2025 Joshua Crisford – KIT202 Web Programming Fundamentals Portfolio</p>
+</footer>
+</html>
