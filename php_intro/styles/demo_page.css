@@ -1,0 +1,18 @@
+/* A very basic style sheet for the Introducing PHP page. */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+.answer {
+  width: 80%;
+  min-height: 1em;
+  color: navy;
+  padding: 2px;
+  border: 1px solid black;
+}
