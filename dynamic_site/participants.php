@@ -9,7 +9,9 @@
 </head>
 <body>
   <div id="container">
-    <!-- For final activity you can add some things here -->
+    <?php include("components/header.php"); ?>
+    <?php include("components/nav.php"); ?>
+
     <main>
       <h2>Registered Participants</h2>
       <?php
@@ -21,7 +23,7 @@
       if (!$result) {
         echo "<p>Couldn't retrieve participants.</p>";
       } else {
-        echo "<table border='1'>";
+        echo "<table class='participants-table' border='1'>";
         echo "<tr><th>First name</th><th>Last name</th><th>Experienced</th><th>DOB</th><th>Gender</th></tr>";
 
         while ($row = $result->fetch_assoc()) {
@@ -41,7 +43,8 @@
       $conn->close();
       ?>
     </main>
-    <!-- For final activity you can add something here -->
+    
+    <?php include("components/footer.php"); ?>
   </div>
 </body>
 </html>
