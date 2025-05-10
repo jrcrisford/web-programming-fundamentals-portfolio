@@ -29,6 +29,7 @@
             <li><a href="#assignment1">Assignment 1 Reflection: Blog Frontend Development</a></li>
             <li><a href="#week8">Week 8 Data Storage</a></li>
             <li><a href="#week9">Week 9 PHP</a></li>
+            <li><a href="#week10">Week 10 Dynamic Pages</a></li>
     </nav>
 
     <h2 id="week1">Week 1/Week 2 Introduction and HTML</h2>
@@ -269,7 +270,37 @@
         Overall, I’m feeling more confident about using PHP to process data and generate dynamic output.
         Exploring the more advanced features in coming weeks should be interesting.
     </p>
-    
+
+    <h2 id="week10">Week 10 Dynamic Pages</h2>
+
+    <h3>Summary of New Skills</h3>
+    <p>
+        The focus this week was on connecting PHP to the MySQL database that was created in Week 8, and then dynamically generating web content.
+        I learned how to open a connection using <code>mysqli</code> and execute queries using <code>$conn-&gt;query()</code>, then retrieve results with <code>fetch_assoc()</code>.
+        I practised modularising the website using <code>PHP include</code> and applying existing CSS to PHP pages.
+        We also learned how to construct a database connection script (<code>dbconn.php</code>) and use logic in PHP to generate customised output based on data values.
+    </p>
+
+    <h3>Tutorial Task</h3>
+    <p>
+        I began by inserting a number of records into the Participant table, including one for myself, through phpMyAdmin.
+        After uploading the <code>dynamic_site</code> folder to the server, I edited <code>participants.php</code> to show the participant data from the MySQL database.
+        Using a ternary operator, the experience column was formatted as “Yes” or “No”, with “Yes” being shown in bold.
+        By copying existing images and styles folders from previous tutorials, the previous styling was applied automatically.
+        I proceeded to create a hover effect for the table rows by assigning a class to the table and targeting it in CSS.
+        I created new reusable PHP files for the header, nav, and footer components and included them in the page.
+        I attempted the optional nav logic challenge but decided to skip it after finding it too difficult.
+    </p>
+
+    <h3>Self-Assessment and Reflection</h3>
+    <p>
+        This week really demonstrates connections between the front end and back end of a website.
+        It was quite satisfying to see data being pulled from a database and displayed on the page.
+        I noticed that using PHP includes makes the page structure feel more organised and easier to manage, which is particularly apparent when reusing elements like headers and footers.
+        Even though I ended up skipping the optional navigation challenge, I still feel I got a lot out of working with dynamic content and using PHP to manage page structure.
+        The hover effect and styling were interesting too, and also helped bring it all together visually.
+    </p>
+
 </body>
 
 <footer>
