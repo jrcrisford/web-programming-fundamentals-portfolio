@@ -182,6 +182,7 @@ The 'Cancel / Back' button should have:
 You will need to define additional CSS rules to style the button colours
 */
 .btn {
+    display: inline-block;
     border: none;
     margin: 5px 0;
     padding: 10px 15px;
@@ -192,11 +193,17 @@ You will need to define additional CSS rules to style the button colours
     cursor: default;
 }
 
-.btn-register {
+table .btn {
+    margin: 0;
+}
+
+.btn-register,
+.main-action {
     background-color: #246fb4;
 }
 
-.btn-register:hover {
+.btn-register:hover,
+.main-action:hover {
     background-color: #448fd4;
 }
 
@@ -221,7 +228,8 @@ using JavaScript in Week 5.)
 - The gap between elements is 10px
 - Justify the content to the left
 */
-#registrationForm {
+#registrationForm,
+.editForm {
     display: grid;
     grid-template-columns: auto 200px auto;
     gap: 10px;
