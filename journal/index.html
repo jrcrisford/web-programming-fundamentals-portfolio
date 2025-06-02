@@ -30,6 +30,7 @@
             <li><a href="#week8">Week 8 Data Storage</a></li>
             <li><a href="#week9">Week 9 PHP</a></li>
             <li><a href="#week10">Week 10 Dynamic Pages</a></li>
+            <li><a href="#week11">Week 11 Security</a></li>
     </nav>
 
     <h2 id="week1">Week 1/Week 2 Introduction and HTML</h2>
@@ -299,6 +300,33 @@
         I noticed that using PHP includes makes the page structure feel more organised and easier to manage, which is particularly apparent when reusing elements like headers and footers.
         Even though I ended up skipping the optional navigation challenge, I still feel I got a lot out of working with dynamic content and using PHP to manage page structure.
         The hover effect and styling were interesting too, and also helped bring it all together visually.
+    </p>
+
+    <h2 id="week11">Week 11 Security</h2>
+
+    <h3>Summary of New Skills</h3>
+    <p>
+        This week focused on implementing dynamic forms using PHP and the MySQL database.
+        I was taught two common methods for handling user input: a two-file approach that includes an HTML and PHP file, and the self-posting PHP form, which is a single PHP file.
+        I saw how insert and update queries can be used within PHP to update tables in the database and how to use HTML5 validation to ensure fields were completed correctly.
+        The tutorial also introduced basic security practices like sanitising output using <code>htmlspecialchars()</code> to prevent cross-site scripting.
+    </p>
+
+    <h3>Tutorial Task</h3>
+    <p>
+        The tutorial involved updating the <code>add.html</code> form to include validation and post to <code>add.php</code>.
+        In <code>add.php</code>, I wrote a statement to insert a new participant record into the database and then redirect back to <code>participants.php</code> if successful.
+        I completed <code>edit.php</code> by writing a <code>retrieve()</code> function that will populate the form with the existing participant's data, and an <code>update()</code> one to commit the changes.
+        I tested the forms to confirm participants could be added and edited successfully.
+    </p>
+
+    <h3>Self-Assessment and Reflection</h3>
+    <p>
+        Introducing dynamic user input felt like it built well on last week's content.
+        The two-file approach in the tutorial for adding records was easy enough, but the edit page stood out to me more, seeing how one file can handle both displaying and updating a record depending on whether it's accessed via GET or POST.
+        I also ran into a few minor issues like mistyped column names and simple CSS issues, which serve as my daily reminder that any tiny oversight can break functionality.
+        I wouldn’t say the form logic was overly difficult, but I found it did reinforce the importance of sanitising data and the use of prepared statements.
+        Overall, it feels like a complete ‘start to end’ proof from user input to database storage and retrieval.
     </p>
 
 </body>
