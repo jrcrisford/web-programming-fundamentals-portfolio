@@ -113,3 +113,48 @@ footer {
     border-top: 1px solid #ccc;
     padding-top: 1rem;
 }
+
+/* Button links */
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.button {
+    flex: 1 1 calc(50% - 1rem);
+    text-align: center;
+    padding: 12px 20px;
+    background-color: #377fd6;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    min-width: 280px;
+    max-width: 340px;
+}
+
+.button:hover {
+    background-color: #2a65ab;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e6eef8;
+    color: #003366;
+    text-decoration: none; 
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 0.95em;
+    margin-top: 1rem;
+    border: 1px solid #c2d3eb;
+    transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #d2e6f8;
+}
