@@ -31,6 +31,7 @@
             <li><a href="#week9">Week 9 PHP</a></li>
             <li><a href="#week10">Week 10 Dynamic Pages</a></li>
             <li><a href="#week11">Week 11 Security</a></li>
+            <li><a href="#week12">Week 12 Authentication</a></li>
     </nav>
 
     <h2 id="week1">Week 1/Week 2 Introduction and HTML</h2>
@@ -327,6 +328,34 @@
         I also ran into a few minor issues like mistyped column names and simple CSS issues, which serve as my daily reminder that any tiny oversight can break functionality.
         I wouldn’t say the form logic was overly difficult, but I found it did reinforce the importance of sanitising data and the use of prepared statements.
         Overall, it feels like a complete ‘start to end’ proof from user input to database storage and retrieval.
+    </p>
+
+    <h2 id="week12">Week 12 Authentication</h2>
+
+    <h3>Summary of New Skills</h3>
+    <p>
+        This week, I learned how to implement basic authentication and authorisation in PHP.
+        I learned how we can use PHP sessions to persist login state across multiple pages and how we can verify a user’s identity through secure login forms.
+        The lecture emphasised the ‘stateless’ nature of HTTP, the use of sessions to store state data, like logged-in users, and the importance of password hashing.
+        PHP’s <code>password_hash()</code> and <code>password_verify()</code> functions were presented as secure tools to use when storing and validating passwords.
+        The distinction between authentication (verification of identity) and authorisation (controlling access) was also covered.
+    </p>
+
+    <h3>Tutorial Task</h3>
+    <p>
+        The tutorial task went over implementing login and logout functionality.
+        Using <code>session_start()</code> and <code>$_SESSION</code> to manage the user session ensured protected pages could only be accessed by a logged-in user.
+        The login form was created as a self-posting PHP page and initially allowed any credentials to be entered.
+        Later, I added a <code>User</code> table to the database that stores hashed passwords with <code>password_hash()</code> and verified them using <code>password_verify()</code> inside a function called <code>authenticate()</code>.
+        I also made a form to register new users and implemented access control with session checks on the protected pages.
+    </p>
+
+    <h3>Self-Assessment and Reflection</h3>
+    <p>
+        This week's content was the final part tying together frontend forms, backend logic, and database operations.
+        It increased my understanding of how authentication can be implemented on the web, in particular the importance of hashing and the role of sessions in state management.
+        Having to add actual authorisation checks (redirection of unauthorised users) made the site feel like a real admin system.
+        Overall, I feel I now have a clearer picture of secure user management in PHP.
     </p>
 
 </body>
