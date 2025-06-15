@@ -21,33 +21,48 @@ Each section showcases practical skills including:
 
 ```
 web-programming-fundamentals-portfolio/
-├── db_docs/
-│   ├── data_dictionary.pdf
-│   └── erd.png
-├── dynamic_site/
-│   ├── dbconn.php
-│   ├── login.php
-│   ├── logout.php
-│   ├── participants.php
-│   └── validate_login.php
-├── journal/
-│   ├── week02.html
-│   ├── week03.html
-│   └── ...
-├── js_intro/
-│   ├── challenge1.js
-│   └── challenge2.js
-├── php_intro/
-│   ├── array_processing.php
-│   └── display_table.php
-├── static_site/
-│   ├── about.html
-│   ├── contact.html
-│   └── events.html
 ├── index.html
 ├── styles.css
-└── README.md
-
+├── db_docs/
+│   ├── index.html
+│   ├── Tute 8 Data Dictionary.pdf
+│   ├── Tute 8 Data Dictionary.png
+│   ├── Tute 8 Data Dictionary.xlsx
+│   ├── Tute 8 ERD KIT202.pdf
+│   └── Tute 8 ERD KIT202.png
+├── dynamic_site/
+│   ├── dbconn.php
+│   ├── participants.php
+│   ├── components/
+│   │   ├── footer.php
+│   │   ├── header.php
+│   │   └── nav.php
+│   ├── images/
+│   │   └── banner.png
+│   └── styles/
+│       └── style.css
+├── journal/
+│   └── index.html
+├── js_intro/
+│   ├── index.html
+│   ├── js/
+│   │   └── playground.js
+│   └── styles/
+│       └── demo_page.css
+├── php_intro/
+│   ├── index.php
+│   └── styles/
+│       └── demo_page.css
+├── static_site/
+│   ├── index.html
+│   ├── registration.html
+│   ├── testimonials.html
+│   ├── images/
+│   │   └── banner.png
+│   ├── js/
+│   │   └── validation.js
+│   └── styles/
+│       └── style.css
 ```
 
 ---
@@ -57,10 +72,10 @@ web-programming-fundamentals-portfolio/
 To run the project locally:
 
 1. Clone or download this repository.
-2. Place the folder inside your local `htdocs` (e.g. in XAMPP).
-3. Import any provided `.sql` files into your MySQL database if required.
-4. Update database connection settings in `dbconn.php` if applicable.
-5. Open `localhost/web-programming-fundamentals-portfolio/index.html` in a web browser.
+2. Place the folder inside your local `htdocs` directory (e.g., in XAMPP).
+3. If needed, import any `.sql` files into MySQL.
+4. Update `dbconn.php` with your database credentials.
+5. Open `localhost/web-programming-fundamentals-portfolio/index.html` in your browser.
 
 ---
 
